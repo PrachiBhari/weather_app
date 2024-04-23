@@ -1,0 +1,195 @@
+
+/* style.css */
+
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up font */
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* Container styles */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Background image styles */
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Search box styles */
+.search-box {
+    position: absolute;
+    top: 20px; /* Adjust top position */
+    right: 20px;
+}
+
+#city {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #3C3C3C;
+    background-color: #f1f1f185;
+    outline: none;
+}
+
+/* Adjust SVG position */
+.search-box svg {
+    position: absolute;
+    top: 10px; /* Adjust top position */
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Search history styles */
+.search-history {
+    position: absolute;
+    top: 20px; /* Adjust top position */
+    left: 20px;
+}
+
+.search-history h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.search-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-history li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    color: #fcff4d; /* Adjust color */
+}
+.date-time{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.time, .date{
+    font-size: 35px;
+    font-size: 400;
+    color: #fff;
+}
+/* Data styles */
+.data {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Adjust color */
+}
+
+.place-info,
+.temp,
+.disc {
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 80px;
+    text-align: center; /* Center align text */
+}
+
+.disc {
+    width: 80vw;
+    text-transform: capitalize;
+    /* Center align text */
+    margin-right: 40px;
+}
+
+/* Other styles remain unchanged */
+
+
+.view-more-box{
+    width: 10%;
+    height: 300px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.svg{
+    width: 22px;
+    position: absolute;
+    top: 136px;
+    right: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.info-card{
+    width: 300px;
+    height: 150px;
+    background: #f1f1f175;
+    position: absolute;
+    left: 50.4%;
+    transform: translateX(-50%);
+    bottom: -350px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 30px;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.flex{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-card p{
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.speed{
+    position: relative;
+    left: 20px;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.visible{
+    opacity: 1;
+    bottom: 50px;
+    transition: 0.5s;
+}
